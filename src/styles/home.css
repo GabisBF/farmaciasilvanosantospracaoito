@@ -1,0 +1,183 @@
+#home {
+    display: flex;
+    height: 100vh;
+    position: relative;
+    background-color: #58d3e9;
+}
+
+#cta {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5%;
+}
+
+#cta .title {
+    font-weight: 800;
+    font-size: 70px;
+    letter-spacing: -4px;
+    line-height: 80px;
+    color: #ffffff;
+}
+
+#cta .title span {
+    font-size: 80px;
+    color: #FF2121;
+}
+
+#cta .description {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#cta_buttons {
+    display: flex;
+    gap: 24px;
+}
+
+#cta_buttons a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#cta_buttons #phone_button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 12px 16px;
+    font-size: 25px;
+    font-weight: 500;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    animation: pular 2s ease-in-out infinite;
+}
+
+#cta_buttons #phone_button {
+    color: #FF2121;
+}
+
+#cta_buttons #phone_button:hover{
+    background-color: #FF2121;
+}
+
+#cta_buttons #phone_button:hover {
+    color: #ffffff;
+}
+
+#phone_button button {
+    box-shadow: none;
+}
+
+
+@keyframes pular {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    
+}
+
+#banner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 80%;
+    z-index: 2;
+}
+
+#banner img {
+    height: 85%;
+    width: auto;
+}
+
+.shape {
+    background-color: #FF2121;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    border-radius: 40% 30% 0% 20%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1170px) {
+    #home {
+        height: 65vh;
+        padding-top: 0;
+    }
+
+    #banner, 
+    #banner img, 
+    #home .shape {
+        display: none;
+    }
+
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    #cta .title {
+        margin-top: 50px;
+        line-height: 40px;
+        font-size: 40px;
+    }
+
+    #cta .title span{
+        font-size: 55px;
+    }
+    
+    #cta .description {
+        font-size: 20px;
+    }
+
+    #phone_button {
+        padding: 12px 16px;
+        font-size: 25px;
+    }
+
+    #cta .social-media-buttons a {
+        width: 50px;
+        height: 50px;
+        background-color: #ff2121;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #phone_button button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    #cta .title {
+        font-size: 30px;
+    }
+
+    #cta .title span{
+        font-size: 45px;
+    }
+    
+    #cta .description {
+        font-size: 16px;
+    }
+
+    #phone_button {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+
+    #cta .social-media-buttons a {
+        width: 30px;
+        height: 30px;
+        background-color: #ff2121;
+        font-size: 15px;
+    }
+}
